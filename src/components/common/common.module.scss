@@ -1,0 +1,158 @@
+@import '../../constants/styles/colors';
+
+.button{
+    background-color:$colorbutton;
+    color:white;
+    cursor: pointer;
+   @include desktop{
+    font-size: 15.5px;
+    padding:6px 15px;
+    border-radius:3px;
+   }
+   @include mobile{
+    margin-top:-13px !important;
+    display:block;
+    font-size: 14px;
+    padding:4px;
+    border-radius:2px;
+   }
+    text-decoration: none;
+    font-family: 'Noto Sans', sans-serif;
+}
+.selectLang{
+    position:relative;
+    border:1px solid white;
+    @include desktop{
+    margin-right: 40px;
+    padding:2px 4px;
+    margin-top: -5px;
+    height: 30px;
+    }
+    @include mobile{
+    margin-right: 20px;
+    padding:2px 4px;
+    margin-top: -15px;
+    height: 25px;
+    }
+    color:white;
+    text-align: center;
+    display:flex;
+    cursor:pointer;
+    p{
+        font-size: 14px;
+        margin-top: 3px;
+        text-align: center;
+    }
+    &Icon{
+        font-size: 18px !important;
+        margin-top: 3px;
+    }
+    &Icon2{
+    margin-top: 2px;
+    display:block;
+    }
+    
+    &:hover  &Focus{
+        display:block;
+    }
+    &::after{
+        content:"";
+        position: absolute;
+        height:5px;
+        width:100%;
+        background-color:transparent;
+        top: 100%;
+    }
+    &Focus{
+        display:none;
+        position: absolute;
+        top:calc(100% + 2px);
+        right:0px;
+        height:auto;
+        width: 100%;
+        background-color:$colorgray-800;
+        p{
+            color:white;
+            margin:0;
+            &:hover{
+                background-color:$colorblue
+            }
+        }
+    }
+}
+.input{
+    margin-top:20px;
+    @include desktop{
+        margin-left:130px;
+        display:flex;
+    }
+    .inputStart{
+        @include mobile{
+            margin-left:20px;
+        }
+        background-color:#fff;
+        padding-top:4px;
+        border: 1px solid #fff;
+        font-family: 'Noto Sans', sans-serif;
+      @include desktop{
+        width:470px;
+        font-size:18px;
+    }
+    @include mobile{
+          font-size:14px;
+          width:337px;
+        //   margin-left:-30px;
+        padding:11px 6px;
+          display:block;
+      }
+        padding-left:10px;
+        outline:none;
+    }
+    &Button{
+        display:block;
+        background-color:#f40612;
+        @include desktop{
+        height:60px;
+        width:auto;
+        padding:0 10px;
+    }
+    @include mobile{
+        max-width:105px;
+        height:40px;
+        margin:10px auto;
+       }
+        display:flex;
+        color:white;
+        text-decoration:none;
+        p:first-child{
+            margin-left:10px;
+           @include desktop{
+            font-size:26px;
+            padding-top:3px;
+           }
+           @include mobile{
+            font-size:18px;
+           }
+        }
+
+        &Icon{
+           @include mobile{
+            margin-top:10px !important;
+        }
+        margin-top:15px !important;
+        .Right{
+            @include desktop{
+                font-size:35px;
+            }
+        }
+        }
+    }
+   &Warning{
+       color:#ffa00a;
+       margin-left:-380px;
+       font-size:16px !important;
+       @include mobile{
+           display:none;
+       }
+   }
+}
