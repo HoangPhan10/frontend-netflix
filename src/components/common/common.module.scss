@@ -1,158 +1,649 @@
-@import '../../constants/styles/colors';
+@import "../../constants/styles/colors";
 
-.button{
-    background-color:$colorbutton;
-    color:white;
-    cursor: pointer;
-   @include desktop{
+.button {
+  background-color: $colorbutton;
+  color: white;
+  cursor: pointer;
+  @include desktop {
     font-size: 15.5px;
-    padding:6px 15px;
-    border-radius:3px;
-   }
-   @include mobile{
-    margin-top:-13px !important;
-    display:block;
+    padding: 6px 15px;
+    border-radius: 3px;
+  }
+  @include mobile {
+    margin-top: -13px !important;
+    display: block;
     font-size: 14px;
-    padding:4px;
-    border-radius:2px;
-   }
-    text-decoration: none;
-    font-family: 'Noto Sans', sans-serif;
+    padding: 4px;
+    border-radius: 2px;
+  }
+  text-decoration: none;
+  font-family: "Noto Sans", sans-serif;
 }
-.selectLang{
-    position:relative;
-    border:1px solid white;
-    @include desktop{
+.selectLang {
+  position: relative;
+  border: 1px solid white;
+  @include desktop {
     margin-right: 40px;
-    padding:2px 4px;
+    padding: 2px 4px;
     margin-top: -5px;
     height: 30px;
-    }
-    @include mobile{
+  }
+  @include mobile {
     margin-right: 20px;
-    padding:2px 4px;
+    padding: 2px 4px;
     margin-top: -15px;
     height: 25px;
-    }
-    color:white;
+  }
+  color: white;
+  text-align: center;
+  display: flex;
+  cursor: pointer;
+  p {
+    font-size: 14px;
+    margin-top: 3px;
     text-align: center;
-    display:flex;
-    cursor:pointer;
-    p{
-        font-size: 14px;
-        margin-top: 3px;
-        text-align: center;
-    }
-    &Icon{
-        font-size: 18px !important;
-        margin-top: 3px;
-    }
-    &Icon2{
+  }
+  &Icon {
+    font-size: 18px !important;
+    margin-top: 3px;
+  }
+  &Icon2 {
     margin-top: 2px;
-    display:block;
-    }
-    
-    &:hover  &Focus{
-        display:block;
-    }
-    &::after{
-        content:"";
-        position: absolute;
-        height:5px;
-        width:100%;
-        background-color:transparent;
-        top: 100%;
-    }
-    &Focus{
-        display:none;
-        position: absolute;
-        top:calc(100% + 2px);
-        right:0px;
-        height:auto;
-        width: 100%;
-        background-color:$colorgray-800;
-        p{
-            color:white;
-            margin:0;
-            &:hover{
-                background-color:$colorblue
-            }
-        }
-    }
-}
-.input{
-    margin-top:20px;
-    @include desktop{
-        margin-left:130px;
-        display:flex;
-    }
-    .inputStart{
-        @include mobile{
-            margin-left:20px;
-        }
-        background-color:#fff;
-        padding-top:4px;
-        border: 1px solid #fff;
-        font-family: 'Noto Sans', sans-serif;
-      @include desktop{
-        width:470px;
-        font-size:18px;
-    }
-    @include mobile{
-          font-size:14px;
-          width:337px;
-        //   margin-left:-30px;
-        padding:11px 6px;
-          display:block;
-      }
-        padding-left:10px;
-        outline:none;
-    }
-    &Button{
-        display:block;
-        background-color:#f40612;
-        @include desktop{
-        height:60px;
-        width:auto;
-        padding:0 10px;
-    }
-    @include mobile{
-        max-width:105px;
-        height:40px;
-        margin:10px auto;
-       }
-        display:flex;
-        color:white;
-        text-decoration:none;
-        p:first-child{
-            margin-left:10px;
-           @include desktop{
-            font-size:26px;
-            padding-top:3px;
-           }
-           @include mobile{
-            font-size:18px;
-           }
-        }
+    display: block;
+  }
 
-        &Icon{
-           @include mobile{
-            margin-top:10px !important;
+  &:hover &Focus {
+    display: block;
+  }
+  &::after {
+    content: "";
+    position: absolute;
+    height: 5px;
+    width: 100%;
+    background-color: transparent;
+    top: 100%;
+  }
+  &Focus {
+    display: none;
+    position: absolute;
+    top: calc(100% + 2px);
+    right: 0px;
+    height: auto;
+    width: 100%;
+    background-color: $colorgray-800;
+    p {
+      color: white;
+      margin: 0;
+      &:hover {
+        background-color: $colorblue;
+      }
+    }
+  }
+}
+.input {
+  margin-top: 20px;
+  @include desktop {
+    margin-left: 130px;
+    display: flex;
+  }
+  .inputStart {
+    @include mobile {
+      margin-left: 20px;
+    }
+    background-color: #fff;
+    padding-top: 4px;
+    border: 1px solid #fff;
+    font-family: "Noto Sans", sans-serif;
+    @include desktop {
+      width: 470px;
+      font-size: 18px;
+    }
+    @include mobile {
+      font-size: 14px;
+      width: 337px;
+      //   margin-left:-30px;
+      padding: 11px 6px;
+      display: block;
+    }
+    padding-left: 10px;
+    outline: none;
+  }
+  &Button {
+    display: block;
+    background-color: #f40612;
+    @include desktop {
+      height: 60px;
+      width: auto;
+      padding: 0 10px;
+    }
+    @include mobile {
+      max-width: 105px;
+      height: 40px;
+      margin: 10px auto;
+    }
+    display: flex;
+    color: white;
+    text-decoration: none;
+    p:first-child {
+      margin-left: 10px;
+      @include desktop {
+        font-size: 24px;
+        padding-top: 3px;
+      }
+      @include mobile {
+        font-size: 18px;
+      }
+    }
+
+    &Icon {
+      @include mobile {
+        margin-top: 10px !important;
+      }
+      margin-top: 15px !important;
+      .Right {
+        @include desktop {
+          font-size: 35px;
         }
-        margin-top:15px !important;
-        .Right{
-            @include desktop{
-                font-size:35px;
+      }
+    }
+  }
+  &Warning {
+    color: #ffa00a;
+    margin-left: -380px;
+    font-size: 16px !important;
+    @include mobile {
+      display: none;
+    }
+  }
+}
+
+.navbar {
+  font-family: "Noto Sans", sans-serif;
+  width: auto;
+  height: 64px;
+  background-color: black;
+  margin: -10px !important;
+  padding: 0 80px;
+  @include mobile {
+    padding: 0 20px;
+  }
+  justify-content: space-between;
+  display: flex;
+  &Logo {
+    display: flex;
+    img {
+      margin-top: -20px;
+      width: 108px;
+      height: 105px;
+    }
+    p {
+      color: white;
+      font-size: 20px;
+      margin-right: 10px;
+      margin-top: 18px;
+      @include mobile {
+        display: none;
+      }
+    }
+    &Link {
+      color: white;
+      margin-top: 20px;
+
+      font-size: 18px;
+      text-decoration: none;
+      @include mobile {
+        display: none;
+      }
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+  &Singup {
+    margin-top: 22px;
+    display: flex;
+    @include mobile {
+      margin-top: 33px;
+    }
+    &Button {
+      margin-top: -5px;
+      height: 22px;
+      font-size: 13px;
+      font-weight: 500;
+      padding: 5px 10px;
+      margin-right: 20px;
+      text-align: center;
+      text-transform: uppercase;
+      text-decoration: none;
+      background-color: transparent;
+      color: white;
+      border: 1px solid white;
+      cursor: pointer;
+      @include mobile {
+        font-size: 12px;
+        margin-top: -10px;
+        padding: 2px 5px;
+      }
+      &:hover {
+        background-color: $colorgray-100;
+        color: black;
+      }
+    }
+  }
+}
+
+.Footer {
+  width: auto;
+  height: 150px;
+  background-color: #222;
+  @include desktop {
+    display: flex;
+    padding: 40px 90px;
+  }
+  @include mobile {
+    text-align: center;
+    padding-top: 20px;
+  }
+  justify-content: space-between;
+  margin: -10px !important;
+  font-family: "Noto Sans", sans-serif;
+  &Select {
+    width: 170px;
+    @include mobile {
+      margin: 0 auto;
+      width: 140px;
+      margin-bottom: 20px;
+    }
+  }
+  &Link {
+    margin-top: 0;
+    text-decoration: none;
+    color: #777;
+    font-size: 14px;
+    padding-left: 40px;
+    @include mobile {
+      padding-left: 0;
+      padding-bottom: 10px;
+      display: block;
+    }
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+.register {
+  font-family: "Noto Sans", sans-serif;
+  width: auto;
+  height: 91px;
+  margin: -10px;
+  border-bottom: 1px solid #888;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 60px;
+  @include mobile {
+    padding: 0 20px;
+  }
+  padding-left: 50px;
+  img {
+    width: 220px;
+    height: 220px;
+    margin-top: -60px;
+    @include mobile {
+      margin-left: -30px;
+    }
+  }
+  &Link {
+    text-decoration: none;
+    font-size: 19px;
+    color: black;
+    font-weight: 700;
+    padding-top: 35px;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+.navbarBrowse {
+  font-family: "Noto Sans", sans-serif;
+  width: auto;
+  height: 70px;
+  background-color: rgba(0, 0, 0, 0.9);
+  margin: -10px;
+  padding: 0 50px;
+  display: flex;
+  justify-content: space-between;
+  @include mobile{
+    padding:0 30px;
+  }
+  .Div1 {
+    img {
+      width: 120px;
+      height: 120px;
+      margin-top: -22px;
+      @include mobile{
+        margin-left: -20px;
+      }
+    }
+    display: flex;
+    .List {
+      @include mobile{
+        display: none;
+      }
+      margin-left: 5px;
+      margin-top: 25px;
+      .Link {
+        text-decoration: none;
+        color: white;
+        font-size: 14px;
+        margin-left: 20px;
+      }
+    }
+    .dropDown{
+      
+      &Button{
+        @include desktop{
+          display:none;
+        }
+        @include tablet{
+          display:none;
+        }
+        color:white;
+        font-size: 12px;
+        margin-top: 24px;
+        width:100px;
+      }
+     .Link{
+       text-decoration: none !important;
+     }
+  }
+  }
+  .Div2 {
+    margin-right: 30px;
+    display:flex;
+    margin-top: 20px;
+      .search{
+        @include mobile{
+          display:none;
+        }
+        position: relative;
+        .iconSearch{
+          color:white;
+          font-size: 30px;
+          margin-top: 4px;
+          cursor: pointer;
+        }
+        &:hover .hoverSearch{
+          display: block;
+        }
+        &:hover .iconSearch{
+          display:none;
+        }
+        .hoverSearch{
+          margin-right: 15px;
+          position: absolute;
+          width: 220px;
+          height:32px;
+          top:0;
+          right: 0;
+          display:none;
+          transition: all ease-in .5;
+          input{
+            font-size: 14.5px;
+            width:100%;
+            padding:10px;
+            background-color:white;
+            border:none;
+            outline: none;
+          }
+        }
+      }
+    .notification{
+      position: relative;
+      .iconNoti{
+        color:white;
+        margin:5px 20px;
+        font-size: 28px;
+        cursor: pointer;
+        
+      }
+      &:hover .hoverNoti{
+        display:block;
+      }
+      .hoverNoti{
+        @include mobile{
+          left:-240px;
+        }
+        z-index: 10;
+        overflow-y: scroll;
+        position: absolute;
+        width: 400px;
+        display:none;
+        max-height: 427px;
+        background-color: rgba(0, 0, 0, 0.9) ;
+        top:51px;
+        right:20px;
+        &::before{
+          content: "";
+          border-width: 10px;
+          border-color: transparent transparent white transparent;
+          border-style: solid;
+          top:-20px;
+          right:5px;
+          position: absolute;
+        }
+        &::after{
+          content: "";
+         width:60%;
+         height:20px;
+         background-color: transparent;
+          top:-20px;
+          right:0;
+          position: absolute;
+        }
+        .notiContent{
+          text-decoration: none;
+          width:auto;
+          height:auto;
+          background-repeat: no-repeat;
+          padding:20px;
+          border-bottom: 1px solid #999;
+          display: flex;
+          color:#999;
+          &:hover{
+            color:white;
+          }
+          img{
+            width:112px;
+            height:65px;
+          }
+          div{
+            margin-left: 20px;
+            p{
+              margin: 0;
+              height:44px;
+              overflow: hidden;
+              display: block;
+              display: -webkit-box;
+              -webkit-box-orient: vertical;
+              -webkit-line-clamp: 2;
+            }
+            strong{
+              font-size: 13px;
+              color:#888;
+            }
+          }
+        }
+      }
+    }
+    .account {
+      position: relative;
+      img{
+        border-radius: 5px;
+      }
+      .hover {
+        width: 190px;
+        position: absolute;
+        height: auto;
+        z-index: 10;
+        background-color: rgba(0, 0, 0, 0.9);
+        right: 0;
+        top: 51px;
+        border: 1px solid white;
+        border-top: none;
+        &::before {
+          content: "";
+          border-width: 10px;
+          border-color: transparent transparent white transparent;
+          border-style: solid;
+          position: absolute;
+          right: 7px;
+          top: -20px;
+        }
+        p{
+            color:#999;
+            padding:10px 24px;
+            font-size: 13.5px;
+            border-top: 1px solid #999;
+            cursor:pointer;
+            &:hover{
+                color: #fff;
             }
         }
+        &::after {
+          content: "";
+          position: absolute;
+          width: 100%;
+          height: 15px;
+          background-color: transparent;
+          top: -15px;
+        }
+         display:none;
+        div {
+          color: white;
+          text-align: center;
+          display: flex;
+          .link {
+            text-decoration: none;
+            color: #999;
+            font-size: 13px;
+            margin-top: 24px;
+            &:hover{
+                text-decoration: underline;
+                color:white;
+            }
+          }
+          .icon {
+            margin: 20px 10px 0 20px;
+            display: block;
+          }
+         
+        }
+      }
+      &:hover .hover {
+        display: block;
+      }
+    }
+  }
+}
+.marginTop{
+  margin-top: 60px;
+}
+.romantic {
+  margin-right: 10px;
+  position: relative;
+  &:hover .hoverFilm {
+    display: block;
+  }
+  .right{
+    position: absolute;
+    right:0;
+  }
+  .center{
+    position: absolute;
+    left:-30px;
+  }
+  .hoverFilm {
+    z-index: 3;
+    position: absolute;
+    width: 320px;
+    display: none;
+    height: auto;
+    background-color: #141414;
+    border-radius: 5px;
+    top: -40px;
+    // left:-30px;
+    border: 1px solid #888;
+    .controll {
+      padding: 0 20px;
+      margin-top: 10px;
+      display: flex;
+      justify-content: space-between;
+
+      div {
+          position: relative;
+        .link {
+          border-radius: 50%;
+          border: 2px solid #999;
+          padding: 13px 6px 2px 6px;
+          width: 20px;
+          color: #999;
+          margin-right: 10px;
+          cursor: pointer;
+          .icon {
+            font-size: 25px;
+            text-align: center;
+          }
+         
+          &:hover {
+            background-color: white;
+            color: black;
+            border: 2px solid white;
+          }
+        }
+      }
+      .link {
+          margin-top: -5px;
+        border-radius: 50%;
+        border: 2px solid #999;
+        padding: 2px 15px 0px 2px;
+        width: 20px;
+        color: #999;
+        cursor: pointer;
+        .icon {
+          font-size: 30px;
+          text-align: center;
+        }
+        &:hover {
+          background-color: white;
+          color: black;
+          border: 2px solid white;
+        }
+      }
+
+    }
+    h4{
+        color:#fff;
+        padding-left:24px ;
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+    .progress{
+        padding:0 24px ;
+        display: flex;
+        justify-content: space-between;
+        .P{
+            margin-top: 0;
+            width: 260px;
+            height: 2px;
+            background-color: red;
+        }
+        .P2{
+            margin-top: -12px;
+            font-size: 16px;
+            color: #999;
         }
     }
-   &Warning{
-       color:#ffa00a;
-       margin-left:-380px;
-       font-size:16px !important;
-       @include mobile{
-           display:none;
-       }
-   }
+  }
 }

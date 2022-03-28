@@ -1,10 +1,10 @@
-import { useTranslation } from 'react-i18next';
+import Login from "../../components/pages/login/login";
 
 function LoginPage(){
-    const { t} = useTranslation()
     return (
-        <div>{t("description.part5")}</div>
-
+        <div>
+            <Login/>
+        </div>
     )
 }
 export default LoginPage;

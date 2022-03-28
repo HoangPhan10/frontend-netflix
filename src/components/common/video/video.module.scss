@@ -1,0 +1,24 @@
+@import "../../../constants/styles/colors";
+.video{
+    margin:-10px;
+    margin-top: -20px;
+    position: relative;
+  font-family: "Noto Sans", sans-serif;
+    background-color: black;
+    video{
+        height:671px;
+         width:100%;
+    }
+    h2{
+        font-size: 20px;
+        padding-top: 20px;
+    }
+    &Title{
+        position: absolute;
+        top:0;
+        right: 200px;
+        color: white;
+        word-spacing: 5px;
+        word-break: break-all;
+    }
+}

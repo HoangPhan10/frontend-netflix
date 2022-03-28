@@ -27,7 +27,9 @@ function InputStart(){
       }else{
         setLinkTo("/login")
       }
-    } 
+    } else{
+      setLinkTo("/")
+    }
   }
 
     return (

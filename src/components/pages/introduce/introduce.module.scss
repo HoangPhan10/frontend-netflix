@@ -3,6 +3,7 @@
 .introduceBanner {
   position: relative;
   font-family: "Noto Sans", sans-serif;
+ 
   img {
     height: 690px;
     width: 100%;
@@ -352,7 +353,7 @@
     }
   }
   &Msp{
-    margin: 70px 200px;
+    margin: 70px 20%;
     text-align: center;
     align-items:center;
     color:white;

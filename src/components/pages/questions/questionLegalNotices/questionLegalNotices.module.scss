@@ -1,0 +1,9 @@
+@import "../../../../constants/styles/colors";
+.legalNotices{
+    font-family: 'Noto Sans', sans-serif;
+    margin:40px 80px;
+    @include mobile{
+        margin:20px;
+    }
+    
+}

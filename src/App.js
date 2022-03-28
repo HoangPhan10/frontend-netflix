@@ -3,15 +3,23 @@ import IntroducePage from './features/introduceNetflix/IntroducePage'
 import LoginPage from './features/login/LoginPage';
 import RegisterPage from './features/register/registerPage'
 import IntroduceRoutes from './features/introduceNetflix/introduceRoutes'
+import Browse from './features/browse/browse';
+import RegisterPage2 from './components/pages/register/registerPage2/registerPage2';
+import RegisterPage3 from './components/pages/register/registerPage3/registerPage3';
+import BrowseRoute from './features/browse/browseRoute';
 function App() {
   return (
     <div>
           <Routes>
           <Route path="/" element={<IntroducePage/>} />
           <Route path="/login" element={<LoginPage/>} />
+          <Route path="/browse" element={<Browse/>} />
           <Route path="/register" element={<RegisterPage/>} />
+          <Route path="/register2" element={<RegisterPage2/>} />
+          <Route path="/register3" element={<RegisterPage3/>} />
           </Routes>
           <IntroduceRoutes/>
+          <BrowseRoute/>
     </div>
   );
 }

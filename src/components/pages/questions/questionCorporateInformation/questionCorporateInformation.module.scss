@@ -1,0 +1,12 @@
+@import "../../../../constants/styles/colors";
+.corporateInformation{
+    font-family: 'Noto Sans', sans-serif;
+    margin:40px 80px;
+    @include mobile{
+        margin:20px;
+    }
+    p{
+        margin:10px;
+        margin-left: 0;
+    }
+}

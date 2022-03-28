@@ -1,0 +1,39 @@
+@import "../../../../constants/styles/colors";
+.registerPage1{
+    display: flex;
+    font-family: 'Noto Sans', sans-serif;
+    .margin{
+        margin:160px auto;
+        @include mobile{
+            margin:80px auto;
+        }
+        text-align: center;
+        width:300px;
+        img{
+            width:260px;
+            height:70px
+        }
+        p{
+            margin:0;
+            margin-bottom: 30px;
+            font-size: 18px;
+            color:#333;
+        }
+        span{
+            display:block;
+            font-size: 17px;
+            margin-top: 20px;
+        }
+        h2{
+            margin-top: 0;
+        }
+        .link{
+            background-color:#f6121d;
+            color:white;
+            text-decoration: none;
+            padding:15px 97px;
+            font-size: 24px;
+            border-radius: 5px;
+        }
+    }
+}

@@ -1,0 +1,18 @@
+@import "../../../../constants/styles/colors";
+
+.termsOfUse{
+    font-family: 'Noto Sans', sans-serif;
+    margin:50px 80px;
+    @include mobile{
+        margin:20px;
+    }
+    h1{
+        font-size: 34px;
+    }
+    p{
+        span{
+            text-decoration: underline;
+        }
+    }
+
+}

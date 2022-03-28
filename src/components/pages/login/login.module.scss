@@ -1,0 +1,137 @@
+@import "../../../constants//styles/colors";
+
+.login {
+  margin: -10px;
+  position: relative;
+  font-family: "Noto Sans", sans-serif;
+  img {
+    height: 1099px;
+    width:100%;
+    @include mobile{
+      display:none;
+    }
+  }
+  &Overlay {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 1099px;
+    background-color: rgba(0, 0, 0, 0.5);
+    @include mobile{
+      height: 100%;
+    }
+    img {
+      width: 220px;
+      height: 220px;
+      margin-top: -60px;
+      margin-left: 10px;
+    }
+    .formLogin {
+      width: 310px;
+      height: 460px;
+      background-color: rgb(0, 0, 0, 0.8);
+      margin: 0 auto;
+      padding: 70px;
+      margin-top: -30px;
+      margin-bottom: 150px;
+      @include mobile{
+        padding:30px;
+        width:100%;
+        height:auto;
+        margin-bottom: 0;
+      }
+      .error{
+        font-size: 13.5px;
+        background-color: #e87c03;
+        color: white;
+        padding:10px 15px;
+        border-radius: 5px;
+        margin: 0;
+        margin-top: 30px;
+        @include mobile{
+          width:72%;
+          display:block;
+        }
+        &Link{
+          margin-left: 5px;
+          text-decoration: underline;
+        }
+      }
+      h1 {
+        margin: -30px 0 10px 0;
+        color: white;
+        font-size: 30px;
+        @include mobile{
+          margin-top: 30px;
+        }
+      }
+      .Input {
+        background-color: #454545;
+        border: none;
+        margin-top: 20px;
+        outline: none;
+        font-size: 16px;
+        color: white;
+        padding: 16px;
+        width: 280px;
+        border-radius: 5px;
+      
+      }
+      span {
+        padding: 3px;
+        display: block;
+        color: #e87c03;
+        font-size: 13px;
+      }
+      .Button {
+        text-decoration: none;
+        margin-top: 40px;
+        display: block;
+        background-color: #e50914;
+        color: white;
+        font-weight: 600;
+        padding: 13px 112px;
+        border-radius: 3px;
+        @include mobile{
+          padding:13px 110px;
+          width:90px;
+        }
+      }
+      .remember {
+        @include mobile{
+          width:310px;
+        }
+        div {
+          display: flex;
+          input {
+            margin-top: 15px;
+            margin-right: 5px;
+          }
+        }
+        display: flex;
+        justify-content: space-between;
+        p {
+          color: #999;
+          font-size: 13px;
+        }
+      }
+      p{
+          color:#888;
+          a{
+              text-decoration: none;
+              color:white;
+          }
+      }
+      .Span{
+          color:#999;
+          font-size: 12px;
+          margin:0;
+          @include mobile{
+            width:310px;
+          }
+      }
+      
+    }
+  }
+ 
+}

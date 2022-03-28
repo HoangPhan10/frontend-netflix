@@ -1,0 +1,19 @@
+@import "../../../../constants/styles/colors";
+
+.browseHome {
+  background-color: #141414;
+  height: auto;
+  margin: -10px;
+  // margin-top: -20px;
+  padding: 20px 60px;
+  padding-bottom: 200px;
+  font-family: "Noto Sans", sans-serif;
+
+  p {
+    font-size: 19px;
+    color: white;
+  }
+  img {
+    cursor: pointer;
+  }
+}
