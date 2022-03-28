@@ -4,7 +4,7 @@ import { useTranslation } from "react-i18next";
 import {Link} from 'react-router-dom'
 function Footer() {
   const { t } = useTranslation();
-
+  
   return (
     <div className={styles.Footer}>
      <div className={styles.FooterSelect}>

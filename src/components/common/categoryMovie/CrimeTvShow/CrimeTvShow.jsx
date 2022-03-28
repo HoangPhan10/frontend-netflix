@@ -19,10 +19,10 @@ function CrimeTvShow() {
       }
     })
   },[])
-  
+  console.log(films)
   return (
     <div >
-         <p>Chương trình truyền hình tội phạm</p>
+         <p>Chương trình truyền hình tội phạm2</p>
      <div style={{display:"flex",flexWrap:"wrap"}}>
      {films.map((el,index)=>(
           <Form film={el} index={index}/>
