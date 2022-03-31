@@ -2,16 +2,16 @@ import styles from './video.module.scss'
 import { useEffect, useState } from 'react';
 import CallApi from '../../../api/postApi';
 function Video() {
+  const idEspisodes = JSON.parse(window.localStorage.getItem("idEspisodes"))
   useEffect(() => {
     window.scrollTo(0, 0);
-  }, []);
+  }, [idEspisodes]);
   const [video,setVideo]=useState({})
   const [title,setTitle]=useState("")
-  const idEspisodes = JSON.parse(window.localStorage.getItem("idEspisodes"))
-  const idMovie = JSON.parse(window.localStorage.getItem("idMovie"))
   useEffect(()=>{
     CallApi("films","GET",null).then((res)=>{
       if(res){
+        const idMovie = JSON.parse(window.localStorage.getItem("idMovie"))
         const film = res.data.find((el)=>el._id===idMovie)
         const movie = film.espisodes.find((el)=>el._id===idEspisodes)
         setVideo(movie)

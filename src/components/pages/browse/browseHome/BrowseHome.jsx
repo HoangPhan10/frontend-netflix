@@ -3,6 +3,8 @@ import RomanticTvComedy from './../../../common/categoryMovie/romanticTvComedy/r
 import MediaTvShow from './../../../common/categoryMovie/medicalTvShow/medicalTvShow';
 import DramaTvSeries from '../../../common/categoryMovie/dramaTvSeries/dramaTvSeries';
 import CrimeTvShow from '../../../common/categoryMovie/CrimeTvShow/CrimeTvShow';
+import HorrorTvSeries from '../../../common/categoryMovie/horrorTvSeries/horrorTvSeries';
+import TheaterTvSeries from '../../../common/categoryMovie/theaterTvSeries/theaterTvSeries';
 function BrowseHome() {
   
   return (
@@ -11,6 +13,8 @@ function BrowseHome() {
       <MediaTvShow/>
       <DramaTvSeries/>
       <CrimeTvShow/>
+      <HorrorTvSeries/>
+      <TheaterTvSeries/>
     </div>
   )
 }

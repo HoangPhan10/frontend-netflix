@@ -8,6 +8,9 @@ import PlayArrowIcon from "@mui/icons-material/PlayArrow";
 import IntroduceFooter from "./../../../pages/introduce/introduceFooter";
 
 function EspisodesInformation() {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   const [film, setFilm] = useState([]);
   const id = JSON.parse(window.localStorage.getItem("idMovie"));
   useEffect(() => {
