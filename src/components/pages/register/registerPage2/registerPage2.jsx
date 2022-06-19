@@ -37,7 +37,7 @@ function RegisterPage2() {
   }
   const handleSubmit=()=>{
     if(!show&&!show2&&!show3&&!show4&&!show1){
-      CallApi(`users`, {
+      CallApi(`users`, "POST",{
             email: email,
             password: password,
           }).then(res=>console.log(res))

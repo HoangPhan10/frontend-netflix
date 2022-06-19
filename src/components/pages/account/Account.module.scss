@@ -1,0 +1,48 @@
+@import '../../../constants/styles/colors';
+.account{
+    font-family: "Noto Sans", sans-serif;
+    padding:20px 50px;
+    h2{
+        border-bottom:1px solid black;
+        padding-bottom:10px;
+    }
+    &Info{
+        display:flex;
+        .info{
+            padding:30px 50px;
+            margin:10px auto;
+            border:1px solid black;
+            width:700px;
+            height:400px;
+            .success{
+                color:blue;
+            }
+            .error{
+                color:red
+            }
+            div{
+                margin-bottom:15px;
+                strong{
+                    display:block;
+                    margin-bottom: 10px;
+                }
+                input{
+                    font-size:18px;
+                    padding:5px 10px;
+                    width:95%;
+                }
+                span{
+                    color:red;
+                    font-size: 13px;
+                }
+            }
+            button{
+                margin-top:30px;
+                font-size:16px;
+                cursor:pointer;
+                width:98%;
+                padding:5px 0;
+            }
+        }
+    }
+}
