@@ -1,5 +1,5 @@
 import axios from "axios";
-const BASE_URL="http://localhost:4040"
+const BASE_URL="https://backend-netflix.herokuapp.com"
 function CallApi(endpoint,method="POST", body) {
   return axios({
     method: method,
