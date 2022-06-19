@@ -1,17 +1,17 @@
 import NavbarBrowse from "../../../common/NavbarBrowse"
 import styles from '../browseHome/browseHome.module.scss'
-import FilmSeries from '../../../common/categoryMovie/FilmSeries/FilmSeries';
+import Film from '../../../common/categoryMovie/Film/Film';
 import Footer from '../../../common/Footer'
-function BrowseSeries() {
+function BrowseFilm() {
   return (
     <div>
         <NavbarBrowse/>
         <div className={styles.browseHome}>
-        <FilmSeries/>
+        <Film/>
         </div>
         <Footer/>
     </div>
   )
 }
 
-export default BrowseSeries
+export default BrowseFilm

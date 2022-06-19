@@ -1,6 +1,7 @@
 import NavbarBrowse from "../../components/common/NavbarBrowse"
-import BrowseHome from './../../components/pages/browse/browseHome/BrowseHome';
+import BrowseHome from '../../components/pages/browse/browseHome/BrowseHome';
 import { useEffect } from 'react';
+import Footer from '../../components/common/Footer'
 function Browse() {
   const id = JSON.parse(window.localStorage.getItem("id"));
   useEffect(()=>{
@@ -12,6 +13,7 @@ function Browse() {
     <div>
       <NavbarBrowse/>
       <BrowseHome/>
+      <Footer/>
     </div>
   )
 }

@@ -315,7 +315,7 @@
   display: flex;
   justify-content: space-between;
   @include mobile{
-    padding:0 30px;
+    padding:0 40px;
   }
   .Div1 {
     img {
@@ -558,11 +558,15 @@
   }
   .right{
     position: absolute;
-    right:0;
+    @include desktop{
+      right:0;
+    }
   }
   .center{
     position: absolute;
-    left:-30px;
+    @include desktop{
+      left:-30px;
+    }
   }
   .hoverFilm {
     z-index: 3;
@@ -573,8 +577,10 @@
     background-color: #141414;
     border-radius: 5px;
     top: -40px;
-    // left:-30px;
     border: 1px solid #888;
+    @include mobile{
+      width:330px;
+    }
     .controll {
       padding: 0 20px;
       margin-top: 10px;
